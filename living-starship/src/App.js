@@ -1,34 +1,57 @@
-import React, { Component } from 'react';
-import './App.css';
-
-let var1 ="this is var 1"
-
-
-function printToConsole(){
-  console.log(var1)
-}
-
-
-
-
-
-
-
-
-
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./Components/Header.js";
+import CrewMemberCard from "./Components/CrewMemberCard.js";
+import Footer from "./Components/Footer";
+import TestAllImages from "./Components/TestAllImages";
+import sideMenu from "./Components/SideMenu";
+import SideMenu from "./Components/SideMenu";
+import MainPannel from "./Components/MainPannel";
+import Splash from "./Components/Splash";
 
 class App extends Component {
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      showCrewMemForm: false,
+      showCrewCards: false,
+      showHeader: false,
+      showFooter: false,
+      displaySplash: true,
+    };
+  }
+
+  displaySplash(){
+    if(this.state.displaySplash){
+      return <Splash callBackFromParent = {this.gameSelected}></Splash>
+    }
+    else{
+      
+      return (
+        <React.Fragment>
+          <Header></Header>
+          <SideMenu></SideMenu>
+          <MainPannel>
+            
+          </MainPannel>
+          <Footer></Footer>
+        </React.Fragment>
+      )
+    }
+    
+  }
+  gameSelected = (dataFromChild) =>{
+    console.log("game was selected")
+    this.setState({displaySplash : false})
+    console.log(this.state.buttonSelected)
+  }
   render() {
-    printToConsole()
-
-
-
-
     return (
-      <div className="App">
-        <h1>This is a test site </h1>
-      </div>
+      <React.Fragment>
+        {this.displaySplash()}
+        {/* <Splash callBackFromParent = {this.gameSelected}/> */}
+      </React.Fragment>
     );
   }
 }
