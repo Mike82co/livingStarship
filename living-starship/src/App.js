@@ -3,7 +3,6 @@ import "./App.css";
 import Header from "./Components/Header.js";
 import CrewMemberCard from "./Components/CrewMemberCard.js";
 import Footer from "./Components/Footer";
-import TestAllImages from "./Components/TestAllImages";
 import sideMenu from "./Components/SideMenu";
 import SideMenu from "./Components/SideMenu";
 import MainPannel from "./Components/MainPannel";

@@ -3,10 +3,7 @@
 }
 
 body {
-  /* display: flex;
-  justify-content: space-between;
-  background-color: rgb(0, 91, 165);
-  color: rgb(229, 198, 133); */
+  background-color: rgb(53, 53, 53);
 }
 input {
   width: 200px;
@@ -20,14 +17,18 @@ input {
   width: 20%;
   margin: 0.5em;
 }
+
 .mainContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border: solid;
   border-color: black;
   margin: 0.5em;
 }
 .mainPannel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   border: solid;
   border-color: black;
   width: 80%;
@@ -43,13 +44,7 @@ input {
   flex-direction: column;
   justify-content: space-between;
 }
-.mainContainer {
-  display: flex;
-  flex-direction: row;
-  border: solid;
-  border-color: black;
-  margin: 0.5em;
-}
+
 .header {
   border: solid;
   border-color: black;
@@ -61,17 +56,50 @@ input {
   margin: 0.5em;
 }
 .splashMainContainer {
-  display :flex;
+  display: flex;
   justify-content: space-around;
   align-items: flex-end;
   height: 100vh;
   background-color: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-image: url("./img/StarshipImages/MainLogos/SpaceOperaPosterNoLogos.png");
-  background-position: center; 
+  background-position: center;
   background-size: contain;
 }
-.gameSelectButton{
+.gameSelectButton {
   margin-right: 3em;
   margin-left: 3em;
+}
+.diceDotsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.diceDotRow {
+  display: flex;
+}
+.crewCard {
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+  margin: 1em;
+  border-style: solid;
+  border-color: black;
+}
+.meepleContainer {
+  display: flex;
+  flex-direction: column;
+}
+.meepleContainer img {
+  width: 100%;
+}
+
+.diceDot {
+  width: 40px;
+}
+.rankIcon {
+  display: flex;
+  flex-direction: row;
+}
+.modalListImage {
+  width: 20%;
 }
