@@ -11,6 +11,10 @@
     "simple-react-modal": "^0.5.1",
     "typeface-roboto": "0.0.54"
   },
+  "engines": {
+    "npm": "6.2.0",
+    "node": "10.1.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

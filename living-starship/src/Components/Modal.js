@@ -8,19 +8,23 @@ import Button from "@material-ui/core/Button";
 function getModalStyle() {
   const top = 50;
   const left = 50;
+  const backgroundColor = "rgba(143, 141, 141)";
 
   return {
     top: `${top}%`,
     left: `${left}%`,
-    transform: `translate(-${top}%, -${left}%)`
+    transform: `translate(-${top}%, -${left}%)`,
+    background: `${backgroundColor}`,
+    overflow: "scroll",
+    height: "75%"
   };
 }
 
 const styles = theme => ({
   paper: {
     position: "absolute",
-    width: theme.spacing.unit * 50,
-    backgroundColor: "grey",
+    width: theme.spacing.unit * 75,
+    // backgroundColor: "grey",
     boxShadow: theme.shadows[5],
     padding: theme.spacing.unit * 4,
     outline: "none"
@@ -57,6 +61,7 @@ class SimpleModal extends React.Component {
           {}
           <img src={this.props.displayImg} alt="" />
         </Button>
+
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
@@ -65,7 +70,7 @@ class SimpleModal extends React.Component {
         >
           <div style={getModalStyle()} className={classes.paper}>
             <Typography variant="h6" id="modal-title">
-              Modal title goes here
+              {this.props.title}
             </Typography>
             <Typography variant="subtitle1" id="simple-modal-description">
               discription goes here
@@ -79,14 +84,15 @@ class SimpleModal extends React.Component {
                     // id="tac1"
                     class="modalListImage"
                     type="image"
-                    src={item}
+                    src={item.src}
                     alt=""
                     onClick={e => {
-                      this.props.passedData(item, this.props.id);
+                      this.props.passedData(item.src, this.props.id);
 
                       this.handleClose();
                     }}
                   />
+                  <label>{item.description}</label>
                 </React.Fragment>
               );
             })}

@@ -801,34 +801,38 @@ class diceDots extends Component {
   render() {
     return (
       <React.Fragment>
-        <form class="diceRowForm" id="AGNRow">
-          <label>AGN</label>
-          {this.agnDotDraw()}
-        </form>
-        <form class="diceRowForm" id="ENGRow">
-          <label>ENG</label>
-          {this.engDotDraw()}
-        </form>
-        <form class="diceRowForm" id="FLIRow">
-          <label>FLI </label>
-          {this.fliDotDraw()}
-        </form>
-        <form class="diceRowForm" id="HELRow">
-          <label>HEL</label>
-          {this.helDotDraw()}
-        </form>
-        <form class="diceRowForm" id="OPSRow">
-          <label>OPS</label>
-          {this.opsDotDraw()}
-        </form>
-        <form class="diceRowForm" id="SCIRow">
-          <label>SCI</label>
-          {this.sciDotDraw()}
-        </form>
-        <form class="diceRowForm" id="TACRow">
-          <label>TAC</label>
-          {this.tacDotDraw()}
-        </form>
+        <div>
+          <form class="diceRowForm" id="AGNRow">
+            <label>AGN</label>
+            {this.agnDotDraw()}
+          </form>
+          <form class="diceRowForm" id="ENGRow">
+            <label>ENG</label>
+            {this.engDotDraw()}
+          </form>
+          <form class="diceRowForm" id="FLIRow">
+            <label>FLI </label>
+            {this.fliDotDraw()}
+          </form>
+          <form class="diceRowForm" id="HELRow">
+            <label>HEL</label>
+            {this.helDotDraw()}
+          </form>
+        </div>
+        <div>
+          <form class="diceRowForm" id="OPSRow">
+            <label>OPS</label>
+            {this.opsDotDraw()}
+          </form>
+          <form class="diceRowForm" id="SCIRow">
+            <label>SCI</label>
+            {this.sciDotDraw()}
+          </form>
+          <form class="diceRowForm" id="TACRow">
+            <label>TAC</label>
+            {this.tacDotDraw()}
+          </form>
+        </div>
       </React.Fragment>
     );
   }
