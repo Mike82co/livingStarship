@@ -15,7 +15,7 @@ class CrewMemberCard extends Component {
     super(props);
     this.state = {
       imgData: [],
-      id: 0,
+      id: this.props.cardId,
       name: "",
       meeple: meepleImages[0].src,
       division: divisionImages[0].src,

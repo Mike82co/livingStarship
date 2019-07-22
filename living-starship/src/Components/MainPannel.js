@@ -5,13 +5,25 @@ class MainPannel extends Component {
   constructor() {
     super();
     this.state = {
-      cards: [<CrewMemberCard />]
+      cards: [],
+      cardsMade: 0
     };
   }
   addCard() {
-    var newCard = this.state.cards.concat(<CrewMemberCard />);
+    this.setState({ cardsMade: this.state.cardsMade + 1 });
+    var newCard = this.state.cards.concat({
+      id: this.state.cardsMade,
+      tag: <CrewMemberCard cardId={this.state.cardsMade} />
+    });
     this.setState({ cards: newCard });
-    console.log(this.state);
+    console.log(this.state.cardsMade);
+  }
+
+  removeCard() {
+    var newArr = this.state.cards.filter(card => {
+      return card.id !== 2;
+    });
+    this.setState({ cards: newArr });
   }
 
   render() {
@@ -20,21 +32,13 @@ class MainPannel extends Component {
         <button class="button" onClick={e => this.addCard(e)}>
           New Player
         </button>
-        {this.state.cards.map(i => i)}
+        <button class="button" onClick={e => this.removeCard(2)}>
+          Delete
+        </button>
+        {this.state.cards.map(i => i.tag)}
       </div>
     );
   }
 }
-
-// var test = [<CrewMemberCard />, <CrewMemberCard />];
-
-// const MainPannel = props => {
-//   return (
-//     <div class="mainPannel">
-//       <CrewMemberCard />
-//       {test[0]}
-//     </div>
-//   );
-// };
 
 export default MainPannel;
