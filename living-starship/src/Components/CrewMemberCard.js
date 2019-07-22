@@ -32,8 +32,6 @@ class CrewMemberCard extends Component {
   }
   componentDidMount() {}
   passedFromModal = (info, type) => {
-    console.log(info);
-    console.log(type);
     switch (type) {
       case "meepleModal":
         return this.setState({
@@ -73,8 +71,12 @@ class CrewMemberCard extends Component {
   render() {
     return (
       <React.Fragment>
+        {console.log('this cards id =  ' + this.state.id)}
         <div class="crewCard">
           <div class="crewMemberName">
+          <button class="button" onClick={e => this.props.passedFunction(this.props.cardId)}>
+          Delete {this.state.id}
+          </button>
             <form>
               <label>
                 Name:
