@@ -80,8 +80,6 @@ class SimpleModal extends React.Component {
               return (
                 <React.Fragment>
                   <input
-                    //class="diceDot"
-                    // id="tac1"
                     class="modalListImage"
                     type="image"
                     src={item.src}
@@ -92,7 +90,7 @@ class SimpleModal extends React.Component {
                       this.handleClose();
                     }}
                   />
-                  <label>{item.description}</label>
+                  <span>{item.description}</span>
                 </React.Fragment>
               );
             })}

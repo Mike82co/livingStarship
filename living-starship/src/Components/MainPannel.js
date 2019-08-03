@@ -5,31 +5,34 @@ class MainPannel extends Component {
   constructor() {
     super();
     this.state = {
-      cards: [{},],
+      cards: [{}],
       cardsMade: 0
     };
   }
   addCard() {
-    
     this.setState({ cardsMade: this.state.cardsMade + 1 });
     var newCard = this.state.cards.concat({
       id: this.state.cardsMade,
-      tag: <CrewMemberCard cardId={this.state.cardsMade} passedFunction={this.removeCard} />
+      tag: (
+        <CrewMemberCard
+          cardId={this.state.cardsMade}
+          passedFunction={this.removeCard}
+        />
+      )
     });
     this.setState({ cards: newCard });
-    console.log('Cards Made ------')
+    console.log("Cards Made ------");
     console.log(this.state.cardsMade);
   }
 
-  removeCard = (idFromCard) => {
-    console.log('delete id passed from card------')
-    console.log(idFromCard)
+  removeCard = idFromCard => {
+    console.log("delete id passed from card------");
+    console.log(idFromCard);
     var newArr = this.state.cards.filter(card => {
       return card.id !== idFromCard;
     });
     this.setState({ cards: newArr });
-   
-  }
+  };
 
   render() {
     return (

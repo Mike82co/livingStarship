@@ -71,13 +71,16 @@ class CrewMemberCard extends Component {
   render() {
     return (
       <React.Fragment>
-        {console.log('this cards id =  ' + this.state.id)}
+        {console.log("this cards id =  " + this.state.id)}
         <div class="crewCard">
           <div class="crewMemberName">
-          <button class="button" onClick={e => this.props.passedFunction(this.props.cardId)}>
-          Delete {this.state.id}
-          </button>
             <form>
+              <button
+                class="button"
+                onClick={e => this.props.passedFunction(this.props.cardId)}
+              >
+                Delete {this.state.id}
+              </button>
               <label>
                 Name:
                 <input
