@@ -4,6 +4,8 @@ import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import Button from "@material-ui/core/Button";
+import { FormHelperText } from "@material-ui/core";
+
 
 function getModalStyle() {
   const top = 50;
@@ -75,27 +77,22 @@ class SimpleModal extends React.Component {
             <Typography variant="subtitle1" id="simple-modal-description">
               discription goes here
             </Typography>
-
+            
             {this.props.imagesArr.map(item => {
               return (
-                <React.Fragment>
-                  <input
-                    class="modalListImage"
-                    type="image"
-                    src={item.src}
-                    alt=""
-                    onClick={e => {
-                      this.props.passedData(item.src, this.props.id);
-
-                      this.handleClose();
-                    }}
-                  />
-                  <span>{item.description}</span>
-                </React.Fragment>
-              );
+                <Button 
+                  onClick={e => {
+                    this.props.passedData(item.src, this.props.id);
+                    this.handleClose();
+                  }
+                }><div>
+                  <img src={item.src} alt="stupid button"></img>
+                  <p>{item.description}</p>
+                  </div>
+                </Button>
+              )
             })}
-
-            {/* <SimpleModalWrapped /> */}
+            
           </div>
         </Modal>
       </div>
@@ -111,3 +108,17 @@ SimpleModal.propTypes = {
 const SimpleModalWrapped = withStyles(styles)(SimpleModal);
 
 export default SimpleModalWrapped;
+
+
+                
+{/* <input
+class="modalListImage"
+type="image"
+src={item.src}
+alt=""
+onClick={e => {
+  this.props.passedData(item.src, this.props.id);
+
+  this.handleClose();
+}}
+/> */}

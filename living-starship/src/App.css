@@ -108,8 +108,6 @@ input {
   display: flex;
   flex-direction: row;
 }
-.crewCardBottom {
-}
 .meepleContainer {
   display: flex;
   flex-direction: column;

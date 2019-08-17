@@ -4,120 +4,126 @@ const meepleIcons = [
     id: 1,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNDIRofficermeeple.png",
-    description: "This will be the name"
+    description: "Place Holder Title"
   },
   {
     id: 2,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNDIRwarrantmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 3,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNDIVEXECmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 4,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNEnlistedmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 5,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNOfficerDeputymeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 6,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNOfficermeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 7,
     src:
       "/assets/StarshipImages/SmallIcons/MeepleIcons/AGNOfficerSkippermeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 8,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNWarrantDeputymeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 9,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNWarrantmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 10,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNWarrantSkippermeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 11,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/CADETenlistmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 12,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/CADETofficermeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 13,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/CAPTAINofficermeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 14,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/CAPTAINwarrantmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 15,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/ENGDIRofficermeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 16,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/ENGDIRwarrantmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 17,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/ENGDIVEXECmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 18,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/ENGEnlistedmeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 19,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/ENGOfficerDeputymeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 20,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/ENGOfficermeeple.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 21,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/ENGOfficerSkippermeeple.png",
-    description: ""
+    description: "Place Holder Title"
+  },  {
+    id: 21,
+    src:
+      "./assets/StarshipImages/SmallIcons/MeepleIcons/AGN DIV icon3.svg",
+    description: "Place Holder Title"
   }
+
 ];
 const departmentIcons = [
   {
@@ -335,116 +341,116 @@ const rankIcons = [
   {
     id: 1,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/CaptainRankColonel.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 2,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/CaptainRankCommander.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 3,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/CaptainRankLtColonel.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 4,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/CaptainRankLtCommander.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 5,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankCadet.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 6,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankCorporal.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 7,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankJuniorSgt.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 8,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankMasterSgt.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 9,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankPrivate.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 10,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankSeniorSgt.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 11,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankSgtMajor.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 12,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankStaffSgt.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 13,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankCadet.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 14,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankColonel.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 15,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankCommander.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 16,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankEnsign.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 17,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankJrLieutenant.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 18,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankLieutenant.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 19,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankLtColonel.png",
-    description: ""
+    description: "Place Holder Title"
   },
   {
     id: 20,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankLtCommander.png",
-    description: ""
+    description: "Place Holder Title"
   }
 ];
 const functionIcons = [
