@@ -508,7 +508,7 @@ const motivationIcons = [
     id: 1,
     src: "./assets/StarshipImages/MotivationIcons/AcquisitionIcon.png",
     title: "foo",
-    description: "bar"
+    description: "test test test test "
   },
   {
     id: 2,

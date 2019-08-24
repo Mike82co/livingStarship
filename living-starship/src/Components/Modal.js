@@ -86,7 +86,7 @@ class SimpleModal extends React.Component {
                     this.handleClose();
                   }
                 }><div>
-                  <img src={item.src} alt="stupid button"></img>
+                  <img src={item.src} alt="Standard Button"></img>
                   <p>{item.description}</p>
                   </div>
                 </Button>
@@ -109,16 +109,3 @@ const SimpleModalWrapped = withStyles(styles)(SimpleModal);
 
 export default SimpleModalWrapped;
 
-
-                
-{/* <input
-class="modalListImage"
-type="image"
-src={item.src}
-alt=""
-onClick={e => {
-  this.props.passedData(item.src, this.props.id);
-
-  this.handleClose();
-}}
-/> */}
