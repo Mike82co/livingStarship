@@ -556,7 +556,7 @@ const motivationIcons = [
 const divisionIcons = [
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/AGN.png",
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/untitled.svg",
     title: "foo",
     description: "bar"
   },
@@ -592,7 +592,7 @@ const divisionIcons = [
   },
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/CMD.png",
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/CMD2.svg",
     title: "foo",
     description: "bar"
   },
