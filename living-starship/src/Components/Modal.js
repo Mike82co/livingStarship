@@ -18,7 +18,8 @@ function getModalStyle() {
     transform: `translate(-${top}%, -${left}%)`,
     background: `${backgroundColor}`,
     overflow: "scroll",
-    height: "75%"
+    height: "75%",
+    width: "55%",
   };
 }
 
@@ -61,7 +62,7 @@ class SimpleModal extends React.Component {
         <Typography gutterBottom />
         <Button onClick={this.handleOpen}>
           {}
-          <img src={this.props.displayImg} alt="" />
+          <img src={this.props.displayImg} alt="" class="modal-display-image"/>
         </Button>
 
         <Modal
@@ -86,7 +87,8 @@ class SimpleModal extends React.Component {
                     this.handleClose();
                   }
                 }><div>
-                  <img src={item.src} alt="Standard Button"></img>
+                  <img src={item.src} alt="Standard Button" class="modal-icon"
+                  ></img>
                   <p>{item.description}</p>
                   </div>
                 </Button>

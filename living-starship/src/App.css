@@ -15,6 +15,12 @@ input {
   flex-direction: column;
   width: 2em;
 }
+.modal-icon{
+  width: 100px
+}
+.modal-display-image{
+  width: 100px;
+}
 .buttonContainer {
   display: flex;
   flex-direction: column;

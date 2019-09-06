@@ -4,51 +4,51 @@ const meepleIcons = [
     id: 1,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNDIRofficermeeple.png",
-    description: "Place Holder Title"
+    description: "Officer"
   },
   {
     id: 2,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNDIRwarrantmeeple.png",
-    description: "Place Holder Title"
+    description: " Warrant"
   },
   {
     id: 3,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNDIVEXECmeeple.png",
-    description: "Place Holder Title"
+    description: "Exec"
   },
   {
     id: 4,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNEnlistedmeeple.png",
-    description: "Place Holder Title"
+    description: "Enlisted"
   },
   {
     id: 5,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNOfficerDeputymeeple.png",
-    description: "Place Holder Title"
+    description: "Deputy Officer"
   },
   {
     id: 6,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNOfficermeeple.png",
-    description: "Place Holder Title"
+    description: "Officer"
   },
   {
     id: 7,
     src:
       "/assets/StarshipImages/SmallIcons/MeepleIcons/AGNOfficerSkippermeeple.png",
-    description: "Place Holder Title"
+    description: "Officer Skipper"
   },
   {
     id: 8,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNWarrantDeputymeeple.png",
-    description: "Place Holder Title"
+    description: "Warrant Deputy"
   },
   {
     id: 9,
     src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNWarrantmeeple.png",
-    description: "Place Holder Title"
+    description: "Warrant"
   },
   {
     id: 10,
@@ -130,327 +130,329 @@ const departmentIcons = [
     id: 1,
     src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Astr.png",
     title: "foo",
-    description: "bar"
+    description: "Astr"
+  },
+  {
+    id: 2,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/DySp.png",
+    title: "foo",
+    description: "DySp"
+  },
+  {
+    id: 3,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Navi.png",
+    title: "foo",
+    description: "Navi"
+  },
+  {
+    id: 4,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/PiFt.png",
+    title: "foo",
+    description: "PiFt"
+  },
+  {
+    id: 5,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/PiSh.png",
+    title: "foo",
+    description: "Pish"
   },
   {
     id: 2,
     src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/BiCh.png",
     title: "foo",
-    description: "bar"
+    description: "BiCh"
   },
   {
     id: 3,
     src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Btny.png",
     title: "foo",
-    description: "bar"
-  },
-  {
-    id: 4,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Chem.png",
-    title: "foo",
-    description: "bar"
+    description: "Btny"
   },
   {
     id: 1,
     src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Cnsl.png",
     title: "foo",
-    description: "bar"
-  },
-  {
-    id: 5,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Comp.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 6,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Coms.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 7,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Devc.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 8,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Dipl.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 9,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/DySp.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 10,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Envr.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 11,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/GeHy.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 12,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Gunr.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 13,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Infl.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 14,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Logi.png",
-    title: "foo",
-    description: "bar"
+    description: "Cnsl"
   },
   {
     id: 15,
     src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Medi.png",
     title: "foo",
-    description: "bar"
-  },
-  {
-    id: 16,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Metr.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 17,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Mrdo.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 18,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Navi.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 19,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Phys.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 20,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/PiFt.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 21,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/PiSh.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 22,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Prop.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 23,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Regs.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 24,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/RsRx.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 25,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Safe.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 26,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Secr.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 27,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/SoAn.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 28,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Strc.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 29,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Supl.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 30,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Tank.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 31,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Thry.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 32,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Tran.png",
-    title: "foo",
-    description: "bar"
-  },
-  {
-    id: 33,
-    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Wepn.png",
-    title: "foo",
-    description: "bar"
+    description: "Medi"
   },
   {
     id: 34,
     src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Zool.png",
     title: "foo",
-    description: "bar"
-  }
+    description: "Zool"
+  },
+  {
+    id: 4,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Chem.png",
+    title: "foo",
+    description: "Chem"
+  },
+  {
+    id: 11,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/GeHy.png",
+    title: "foo",
+    description: "GeHy"
+  },
+  {
+    id: 16,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Metr.png",
+    title: "foo",
+    description: "Metr"
+  },
+  {
+    id: 19,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Phys.png",
+    title: "foo",
+    description: "Phys"
+  },
+  {
+    id: 31,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Thry.png",
+    title: "foo",
+    description: "Thry"
+  },
+  {
+    id: 5,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Comp.png",
+    title: "foo",
+    description: "Comp"
+  },
+  {
+    id: 6,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Coms.png",
+    title: "foo",
+    description: "Coms"
+  },
+  {
+    id: 25,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Safe.png",
+    title: "foo",
+    description: "Safe"
+  },
+  {
+    id: 29,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Supl.png",
+    title: "foo",
+    description: "Supl"
+  },
+  {
+    id: 32,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Tran.png",
+    title: "foo",
+    description: "Tran"
+  },
+  {
+    id: 7,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Devc.png",
+    title: "foo",
+    description: "Devc"
+  },
+  {
+    id: 10,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Envr.png",
+    title: "foo",
+    description: "Envr"
+  },
+  {
+    id: 22,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Prop.png",
+    title: "foo",
+    description: "Prop"
+  },
+  {
+    id: 28,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Strc.png",
+    title: "foo",
+    description: "bStrcar"
+  },
+  {
+    id: 33,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Wepn.png",
+    title: "foo",
+    description: "Wepn"
+  },
+  {
+    id: 8,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Dipl.png",
+    title: "foo",
+    description: "Dipl"
+  },
+  {
+    id: 14,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Logi.png",
+    title: "foo",
+    description: "Logi"
+  },
+  {
+    id: 23,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Regs.png",
+    title: "foo",
+    description: "Regs"
+  },
+  {
+    id: 24,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/RsRx.png",
+    title: "foo",
+    description: "RsRx"
+  },
+  {
+    id: 27,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/SoAn.png",
+    title: "foo",
+    description: "SoAn"
+  },
+  {
+    id: 12,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Gunr.png",
+    title: "foo",
+    description: "Gunr"
+  },
+  {
+    id: 13,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Infl.png",
+    title: "foo",
+    description: "Infl"
+  },
+  {
+    id: 17,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Mrdo.png",
+    title: "foo",
+    description: "Mrdo"
+  },
+  {
+    id: 26,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Secr.png",
+    title: "foo",
+    description: "Secr"
+  },
+  {
+    id: 30,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Tank.png",
+    title: "foo",
+    description: "Tank"
+  },
+
+
 ];
 const rankIcons = [
   {
     id: 1,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/CaptainRankColonel.png",
-    description: "Place Holder Title"
+    description: "Captain Colonel"
   },
   {
     id: 2,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/CaptainRankCommander.png",
-    description: "Place Holder Title"
+    description: "Captian Commander"
   },
   {
     id: 3,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/CaptainRankLtColonel.png",
-    description: "Place Holder Title"
+    description: "Captain Rank Lt Colonel"
   },
   {
     id: 4,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/CaptainRankLtCommander.png",
-    description: "Place Holder Title"
+    description: "Captain Lt Commander"
   },
   {
     id: 5,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankCadet.png",
-    description: "Place Holder Title"
+    description: "Enlisted Cadet"
   },
   {
     id: 6,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankCorporal.png",
-    description: "Place Holder Title"
+    description: "Enlisted Corporal"
   },
   {
     id: 7,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankJuniorSgt.png",
-    description: "Place Holder Title"
+    description: "Enlisted Junior Sgt"
   },
   {
     id: 8,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankMasterSgt.png",
-    description: "Place Holder Title"
+    description: "Enlisted Master Sgt"
   },
   {
     id: 9,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankPrivate.png",
-    description: "Place Holder Title"
+    description: "Enlisted Private"
   },
   {
     id: 10,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankSeniorSgt.png",
-    description: "Place Holder Title"
+    description: "Enlisted Senior Sgt"
   },
   {
     id: 11,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankSgtMajor.png",
-    description: "Place Holder Title"
+    description: "Enlisted Sgt Major"
   },
   {
     id: 12,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/EnlistedRankStaffSgt.png",
-    description: "Place Holder Title"
+    description: "Enlisted Staff Sgt"
   },
   {
     id: 13,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankCadet.png",
-    description: "Place Holder Title"
+    description: "Officer Cadet"
   },
   {
     id: 14,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankColonel.png",
-    description: "Place Holder Title"
+    description: "Officer Colonel"
   },
   {
     id: 15,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankCommander.png",
-    description: "Place Holder Title"
+    description: "Officer Commander"
   },
   {
     id: 16,
     src: "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankEnsign.png",
-    description: "Place Holder Title"
+    description: "Officer Ensign"
   },
   {
     id: 17,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankJrLieutenant.png",
-    description: "Place Holder Title"
+    description: "Officer Jr Lieutenant"
   },
   {
     id: 18,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankLieutenant.png",
-    description: "Place Holder Title"
+    description: "Officer Lieutenant"
   },
   {
     id: 19,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankLtColonel.png",
-    description: "Place Holder Title"
+    description: "Officer Lt Colonel"
   },
   {
     id: 20,
     src:
       "./assets/StarshipImages/SmallIcons/RankIcons/OfficerRankLtCommander.png",
-    description: "Place Holder Title"
+    description: "Officer Lt Commander"
   }
 ];
 const functionIcons = [
@@ -458,49 +460,49 @@ const functionIcons = [
     id: 1,
     src: "./assets/StarshipImages/SmallIcons/FunctionIcons/AUTHORITY.png",
     title: "foo",
-    description: "bar"
+    description: "Authority"
   },
   {
     id: 2,
     src: "./assets/StarshipImages/SmallIcons/FunctionIcons/CHASSIS.png",
     title: "foo",
-    description: "bar"
+    description: "Chassis"
   },
   {
     id: 3,
     src: "./assets/StarshipImages/SmallIcons/FunctionIcons/CONFLICT.png",
     title: "foo",
-    description: "bar"
+    description: "Conflict"
   },
   {
     id: 4,
     src: "./assets/StarshipImages/SmallIcons/FunctionIcons/EFFICIENCY.png",
     title: "foo",
-    description: "bar"
+    description: "Efficiency"
   },
   {
     id: 5,
     src: "./assets/StarshipImages/SmallIcons/FunctionIcons/INVENTORY.png",
     title: "foo",
-    description: "bar"
+    description: "Inventory"
   },
   {
     id: 6,
     src: "./assets/StarshipImages/SmallIcons/FunctionIcons/MORALE.png",
     title: "foo",
-    description: "bar"
+    description: "Morale"
   },
   {
     id: 7,
     src: "./assets/StarshipImages/SmallIcons/FunctionIcons/RESEARCH.png",
     title: "foo",
-    description: "bar"
+    description: "Research"
   },
   {
     id: 8,
     src: "./assets/StarshipImages/SmallIcons/FunctionIcons/TRAVEL.png",
     title: "foo",
-    description: "bar"
+    description: "Travel"
   }
 ];
 const motivationIcons = [
@@ -508,99 +510,99 @@ const motivationIcons = [
     id: 1,
     src: "./assets/StarshipImages/MotivationIcons/AcquisitionIcon.png",
     title: "foo",
-    description: "test test test test "
+    description: "Acquisition"
   },
   {
     id: 2,
     src: "./assets/StarshipImages/MotivationIcons/BenevolenceIcon.png",
     title: "foo",
-    description: "bar"
+    description: "Benevolence"
   },
   {
     id: 3,
     src: "./assets/StarshipImages/MotivationIcons/ConformityIcon.png",
     title: "foo",
-    description: "bar"
+    description: "Conformity"
   },
   {
     id: 4,
     src: "./assets/StarshipImages/MotivationIcons/PowerIcon.png",
     title: "foo",
-    description: "bar"
+    description: "Power"
   },
   {
     id: 5,
     src: "./assets/StarshipImages/MotivationIcons/ProtectionIcon.png",
     title: "foo",
-    description: "bar"
+    description: "Protection"
   },
   {
     id: 6,
     src: "./assets/StarshipImages/MotivationIcons/SelfDirectionIcon.png",
     title: "foo",
-    description: "bar"
+    description: "Self Direction"
   },
   {
     id: 7,
     src: "./assets/StarshipImages/MotivationIcons/StimulationIcon.png",
     title: "foo",
-    description: "bar"
+    description: "Stimulation"
   },
   {
     id: 8,
     src: "./assets/StarshipImages/MotivationIcons/UniversalismIcon.png",
     title: "foo",
-    description: "bar"
+    description: "Universalism"
   }
 ];
 const divisionIcons = [
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/untitled.svg",
-    title: "foo",
-    description: "bar"
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/ENG.svg",
+    title: "ENG",
+    description: "ENG"
   },
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/SCI.png",
-    title: "foo",
-    description: "bar"
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/SCI.svg",
+    title: "SCI",
+    description: "SCI"
   },
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/OPS.png",
-    title: "foo",
-    description: "bar"
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/OPS.svg",
+    title: "OPS",
+    description: "OPS"
   },
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/HEL.png",
-    title: "foo",
-    description: "bar"
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/HEL.svg",
+    title: "HEL",
+    description: "HEL"
   },
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/FLI.png",
-    title: "foo",
-    description: "bar"
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/FLI.svg",
+    title: "FLI",
+    description: "FLI"
   },
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/ENG.png",
-    title: "foo",
-    description: "bar"
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/ENG.svg",
+    title: "ENG",
+    description: "ENG"
   },
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/CMD2.svg",
-    title: "foo",
-    description: "bar"
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/CMD.svg",
+    title: "CMD",
+    description: "CMD"
   },
   {
     id: 1,
-    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/TAC.png",
-    title: "foo",
-    description: "bar"
+    src: "./assets/StarshipImages/SmallIcons/DivisionIcons/TAC.svg",
+    title: "TAC",
+    description: "TAC"
   }
 ];
 

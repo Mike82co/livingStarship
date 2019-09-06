@@ -10,7 +10,6 @@ class MainPannel extends Component {
     };
   }
   addCard() {
-    this.setState({ cardsMade: this.state.cardsMade + 1 });
     var newCard = this.state.cards.concat({
       id: this.state.cardsMade,
       tag: (
@@ -20,9 +19,11 @@ class MainPannel extends Component {
         />
       )
     });
+    this.setState({ cardsMade: this.state.cardsMade + 1 });
     this.setState({ cards: newCard });
     console.log("Cards Made ------");
     console.log(this.state.cardsMade);
+    console.log(Math.random()*100000)
   }
 
   removeCard = idFromCard => {
