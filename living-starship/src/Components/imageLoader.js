@@ -4,7 +4,8 @@ const meepleIcons = [
     id: 1,
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNDIRofficermeeple.png",
-    description: "Officer"
+    description: "Officer",
+    title: "foo",
   },
   {
     id: 2,

@@ -29,6 +29,8 @@ class CrewMemberCard extends Component {
       stress: 0,
       showMeepleModal: false
     };
+    this.passedFromModal = this.passedFromModal.bind(this)
+    this.addName = this.addName.bind(this)
   }
   componentDidMount() {}
   passedFromModal = (info, type) => {
@@ -65,13 +67,11 @@ class CrewMemberCard extends Component {
 
   addName(e) {
     this.setState({ name: e.target.value });
-    console.log(e.target.value);
   }
 
   render() {
     return (
       <React.Fragment>
-        {console.log("this cards id =  " + this.state.id)}
         <div class="crewCard">
           <div class="crewMemberName">
             <form>
