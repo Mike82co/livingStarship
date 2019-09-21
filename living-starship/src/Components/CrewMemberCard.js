@@ -32,7 +32,6 @@ class CrewMemberCard extends Component {
     this.passedFromModal = this.passedFromModal.bind(this)
     this.addName = this.addName.bind(this)
   }
-  componentDidMount() {}
   passedFromModal = (info, type) => {
     switch (type) {
       case "meepleModal":
@@ -77,9 +76,8 @@ class CrewMemberCard extends Component {
             <form>
               <button
                 class="button"
-                onClick={e => this.props.passedFunction(this.props.cardId)}
-              >
-                Delete {this.state.id}
+                onClick={e => this.props.passedFunction(e, this.state.id)}
+              > Delete {this.state.id}
               </button>
               <label>
                 Name:

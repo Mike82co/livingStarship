@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CrewMemberCard from "./CrewMemberC ard";
+import CrewMemberCard from "./CrewMemberCard";
 
 class MainPannel extends Component {
   constructor() {
@@ -11,13 +11,13 @@ class MainPannel extends Component {
     this.removeCard = this.removeCard.bind(this)
     this.displayCards = this.displayCards.bind(this)
   }
-  componentDidMount(){}
   addCard(event) {
-    let id = Math.random() * 1000
+    let id = Math.floor(Math.random() * 2000);
     var newCard = this.state.cards.concat({
       id: id,
       tag: (
         <CrewMemberCard
+          key={""}
           cardId={id}
           passedFunction={this.removeCard}
         />
@@ -26,14 +26,21 @@ class MainPannel extends Component {
     this.setState({ cards: newCard })
   }
 
-  removeCard (idFromCard) {
+  removeCard (event, id) {
+    event.preventDefault()
+
     let newArr = this.state.cards.filter(card => {
-      return card.id !== idFromCard;
+
+      console.log("conditions === ")
+      console.log(card.id !== id)
+      if(card.id !== id){
+        return card 
+      }
+
+      
     });
-    setTimeout(()=>{
-      this.setState({ cards: newArr });
-    },3000)
-    
+
+      this.setState({ cards: newArr })
   };
 
   displayCards(){
@@ -46,8 +53,8 @@ class MainPannel extends Component {
         <button class="button" onClick={e => this.addCard(e)}>
           New Player
         </button>
-        {this.displayCards()}
-        {/* {this.state.cards.map(i => i.tag)} */}
+        {/* {this.displayCards()} */}
+        {this.state.cards.map(i => i.tag)}
       </div>
     );
   }
