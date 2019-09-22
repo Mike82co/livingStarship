@@ -30,12 +30,16 @@ class MainPannel extends Component {
 
   removeCard (event, id , passedCard) {
     event.preventDefault()
-    console.log(this.state.cards)
+    console.log("+++   the id that was passed was +++++")
+    console.log(id)
+
+
     let newArr = this.state.cards.filter(card => {
       if(card.id !== id){
         return card 
       }
     });
+    console.log(newArr)
       this.setState({ cards: newArr })
       this.setState({updates: true})
   };
@@ -45,9 +49,6 @@ class MainPannel extends Component {
       return i.tag})
   }
 
-
-
-
   render() {
     return (
       <div class="mainPannel">
@@ -55,7 +56,6 @@ class MainPannel extends Component {
           New Player
         </button>
         {this.displayCards()}
-
       </div>
     );
   }
