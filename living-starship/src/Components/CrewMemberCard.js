@@ -76,7 +76,7 @@ class CrewMemberCard extends Component {
             <form>
               <button
                 class="button"
-                onClick={e => this.props.passedFunction(e, this.state.id)}
+                onClick={e => this.props.passedFunction(e, this.state.id, this)}
               > Delete {this.state.id}
               </button>
               <label>
