@@ -8,39 +8,39 @@ class MainPannel extends Component {
       cards: [],
       loaded: false
     };
-    this.addCard = this.addCard.bind(this)
-    this.removeCard = this.removeCard.bind(this)
-    this.displayCards = this.displayCards.bind(this)
+    this.addCard = this.addCard.bind(this);
+    this.removeCard = this.removeCard.bind(this);
+    this.displayCards = this.displayCards.bind(this);
   }
 
   addCard(event) {
     let id = Math.floor(Math.random() * 2000);
-    let newCard = 
-        <CrewMemberCard
-          cardId={id}
-          passedFunction={this.removeCard}
-          key = {id}
-        />
-    this.setState({ cards: [...this.state.cards, newCard] }, ()=>{this.render()}) 
+    let newCard = (
+      <CrewMemberCard cardId={id} passedFunction={this.removeCard} key={id} />
+    );
+    this.setState({ cards: [...this.state.cards, newCard] }, () => {
+      this.render();
+    });
   }
 
-  removeCard (event, id , passedCard) {
-    event.preventDefault()
+  removeCard(event, id, passedCard) {
+    event.preventDefault();
 
-    let newArr = this.state.cards.filter((card) => {
-      console.log(typeof card.key)
-      console.log(typeof id)
-      console.log(card.key === id.toString() )
-      if(card.key !== id.toString()){
-        return card
+    let newArr = this.state.cards.filter(card => {
+      console.log(typeof card.key);
+      console.log(typeof id);
+      console.log(card.key === id.toString());
+      if (card.key !== id.toString()) {
+        return card;
       }
     });
-      this.setState({ cards: newArr })
-  };
+    this.setState({ cards: newArr });
+  }
 
-  displayCards(){
-    return this.state.cards.map((card) =>{
-      return card})
+  displayCards() {
+    return this.state.cards.map(card => {
+      return card;
+    });
   }
 
   render() {
