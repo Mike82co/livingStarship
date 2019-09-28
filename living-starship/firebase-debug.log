@@ -1,0 +1,50 @@
+[debug] [2019-09-28T21:18:57.549Z] ----------------------------------------------------------------------
+[debug] [2019-09-28T21:18:57.550Z] Command:       /Users/mikelavin/.nvm/versions/node/v10.1.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-09-28T21:18:57.550Z] CLI Version:   3.18.4
+[debug] [2019-09-28T21:18:57.550Z] Platform:      darwin
+[debug] [2019-09-28T21:18:57.550Z] Node Version:  v10.1.0
+[debug] [2019-09-28T21:18:57.551Z] Time:          Sat Sep 28 2019 15:18:57 GMT-0600 (MDT)
+[debug] [2019-09-28T21:18:57.551Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-28T21:18:57.567Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-28T21:18:57.568Z] > authorizing via signed-in user
+[debug] [2019-09-28T21:18:57.570Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-09-28T21:18:57.571Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/yPq8fgWOIXrv31lQGmwOCsUmJgxoyb1qHWcDyVcyoq8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Sep 28 2019 15:18:57 GMT-0600 (MDT)
+[debug] [2019-09-28T21:18:57.733Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-28T21:18:57.743Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/livingstarship  
+  
+ Sat Sep 28 2019 15:18:57 GMT-0600 (MDT)
+[debug] [2019-09-28T21:18:58.364Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-28T21:18:58.365Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/livingstarship/tokens  
+  
+ Sat Sep 28 2019 15:18:58 GMT-0600 (MDT)
+[debug] [2019-09-28T21:18:58.773Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'livingstarship'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
+[debug] [2019-09-28T21:19:00.470Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/livingstarship/uploads/-LptjQKpxCj8_34KUIa5?fileCount=435&message=  
+  
+ Sat Sep 28 2019 15:19:00 GMT-0600 (MDT)
+[debug] [2019-09-28T21:19:46.802Z] <<< HTTP RESPONSE 410
+[debug] [2019-09-28T21:19:46.803Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2019-09-28T21:19:46.806Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:10:13)
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:47:25)
+    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1163:10)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1085:12)
+    at Object.onceWrapper (events.js:273:13)
+[error] 
+[error] Error: An unexpected error has occurred.

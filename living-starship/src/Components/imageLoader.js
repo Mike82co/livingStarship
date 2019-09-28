@@ -5,7 +5,7 @@ const meepleIcons = [
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/AGNDIRofficermeeple.png",
     description: "Officer",
-    title: "foo",
+    title: "foo"
   },
   {
     id: 2,
@@ -118,13 +118,12 @@ const meepleIcons = [
     src:
       "./assets/StarshipImages/SmallIcons/MeepleIcons/ENGOfficerSkippermeeple.png",
     description: "Place Holder Title"
-  },  {
+  },
+  {
     id: 21,
-    src:
-      "./assets/StarshipImages/SmallIcons/MeepleIcons/AGN DIV icon3.svg",
+    src: "./assets/StarshipImages/SmallIcons/MeepleIcons/AGN DIV icon3.svg",
     description: "Place Holder Title"
   }
-
 ];
 const departmentIcons = [
   {
@@ -336,9 +335,7 @@ const departmentIcons = [
     src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Tank.png",
     title: "foo",
     description: "Tank"
-  },
-
-
+  }
 ];
 const rankIcons = [
   {
@@ -618,7 +615,79 @@ const raceIcons = [
     src: "./assets/CrewImages/driidanzMale.png",
     title: "ENG",
     description: "ENG"
+  }
+];
+const healthIcons = [
+  {
+    id: 1,
+    src: "./assets/HealthImages/Injury0.png",
+    title: "foo",
+    description: "Astr"
   },
+  {
+    id: 1,
+    src: "./assets/HealthImages/Injury1.png",
+    title: "foo",
+    description: "Astr"
+  },
+  {
+    id: 1,
+    src: "./assets/HealthImages/Injury2.png",
+    title: "foo",
+    description: "Astr"
+  },
+  {
+    id: 1,
+    src: "./assets/HealthImages/Injury3.png",
+    title: "foo",
+    description: "Astr"
+  },
+  {
+    id: 1,
+    src: "./assets/HealthImages/Injury.png",
+    title: "foo",
+    description: "Astr"
+  }
+];
+const damageIcons = [
+  {
+    id: 1,
+    src: "./assets/StarshipImages/SmallIcons/DepartmentIcons/Astr.png",
+    title: "foo",
+    description: "Astr"
+  }
+];
+const stressIcons = [
+  {
+    id: 1,
+    src: "./assets/HealthImages/Stress0.png",
+    title: "foo",
+    description: "Astr"
+  },
+  {
+    id: 2,
+    src: "./assets/HealthImages/Stress1.png",
+    title: "foo",
+    description: "Astr"
+  },
+  {
+    id: 3,
+    src: "./assets/HealthImages/Stress2.png",
+    title: "foo",
+    description: "Astr"
+  },
+  {
+    id: 4,
+    src: "./assets/HealthImages/Stress3.png",
+    title: "foo",
+    description: "Astr"
+  },
+  {
+    id: 5,
+    src: "./assets/HealthImages/Stress.png",
+    title: "foo",
+    description: "Astr"
+  }
 ];
 
 function loadIcons(cat) {
@@ -637,6 +706,12 @@ function loadIcons(cat) {
       return divisionIcons;
     case "race":
       return raceIcons;
+    case "health":
+      return healthIcons;
+    case "damage":
+      return damageIcons;
+    case "stress":
+      return stressIcons;
 
     default:
       return null;
