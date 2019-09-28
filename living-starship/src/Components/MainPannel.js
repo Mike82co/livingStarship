@@ -6,8 +6,7 @@ class MainPannel extends Component {
     super();
     this.state = {
       cards: [],
-      test: [],
-      updated: false,
+      loaded: false
     };
     this.addCard = this.addCard.bind(this)
     this.removeCard = this.removeCard.bind(this)
@@ -16,37 +15,32 @@ class MainPannel extends Component {
 
   addCard(event) {
     let id = Math.floor(Math.random() * 2000);
-    var newCard = {
-      id: id,
-      tag: (
+    let newCard = 
         <CrewMemberCard
           cardId={id}
           passedFunction={this.removeCard}
+          key = {id}
         />
-      )
-    };
-    this.setState({ cards: [...this.state.cards, newCard] })
+    this.setState({ cards: [...this.state.cards, newCard] }, ()=>{this.render()}) 
   }
 
   removeCard (event, id , passedCard) {
     event.preventDefault()
-    console.log("+++   the id that was passed was +++++")
-    console.log(id)
 
-
-    let newArr = this.state.cards.filter(card => {
-      if(card.id !== id){
-        return card 
+    let newArr = this.state.cards.filter((card) => {
+      console.log(typeof card.key)
+      console.log(typeof id)
+      console.log(card.key === id.toString() )
+      if(card.key !== id.toString()){
+        return card
       }
     });
-    console.log(newArr)
       this.setState({ cards: newArr })
-      this.setState({updates: true})
   };
 
   displayCards(){
-    return this.state.cards.map((i) =>{
-      return i.tag})
+    return this.state.cards.map((card) =>{
+      return card})
   }
 
   render() {

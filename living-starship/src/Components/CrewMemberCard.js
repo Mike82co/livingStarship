@@ -27,7 +27,9 @@ class CrewMemberCard extends Component {
       shipFunctions: functionImages[0].src,
       injury: 0,
       stress: 0,
-      showMeepleModal: false
+      showMeepleModal: false,
+      selfUpdated: false,
+      card: this
     };
     this.passedFromModal = this.passedFromModal.bind(this)
     this.addName = this.addName.bind(this)
@@ -76,7 +78,10 @@ class CrewMemberCard extends Component {
             <form>
               <button
                 class="button"
-                onClick={e => this.props.passedFunction(e, this.state.id, this)}
+                onClick={(e) => {
+                  this.props.passedFunction(e, this.state.id, this.state.card)
+                  this.setState({ selfUpdated: true })
+                  }}
               > Delete {this.state.id}
               </button>
               <label>
