@@ -89,8 +89,7 @@ class CrewMemberCard extends Component {
                   this.props.passedFunction(e, this.state.id, this.state.card)
                   this.setState({ selfUpdated: true })
                   }}
-              > Delete {this.state.id}
-              </button>
+              > Delete</button>
               <label>
                 Name:
                 <input
