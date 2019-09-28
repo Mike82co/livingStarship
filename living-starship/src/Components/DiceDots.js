@@ -803,34 +803,39 @@ class diceDots extends Component {
       <React.Fragment>
         <div>
           <form class="diceRowForm" id="AGNRow">
+          {this.agnDotDraw()}
             <label>AGN</label>
-            {this.agnDotDraw()}
+
           </form>
           <form class="diceRowForm" id="ENGRow">
+          {this.engDotDraw()}
             <label>ENG</label>
-            {this.engDotDraw()}
+           
           </form>
           <form class="diceRowForm" id="FLIRow">
+          {this.fliDotDraw()}
             <label>FLI </label>
-            {this.fliDotDraw()}
+            
           </form>
           <form class="diceRowForm" id="HELRow">
+          {this.helDotDraw()}
             <label>HEL</label>
-            {this.helDotDraw()}
+            
           </form>
-        </div>
-        <div>
           <form class="diceRowForm" id="OPSRow">
+          {this.opsDotDraw()}
             <label>OPS</label>
-            {this.opsDotDraw()}
+           
           </form>
           <form class="diceRowForm" id="SCIRow">
+          {this.sciDotDraw()}
             <label>SCI</label>
-            {this.sciDotDraw()}
+            
           </form>
           <form class="diceRowForm" id="TACRow">
+          {this.tacDotDraw()}
             <label>TAC</label>
-            {this.tacDotDraw()}
+           
           </form>
         </div>
       </React.Fragment>

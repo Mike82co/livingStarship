@@ -606,6 +606,20 @@ const divisionIcons = [
     description: "TAC"
   }
 ];
+const raceIcons = [
+  {
+    id: 1,
+    src: "./assets/CrewImages/driidanzFemale.png",
+    title: "ENG",
+    description: "ENG"
+  },
+  {
+    id: 2,
+    src: "./assets/CrewImages/driidanzMale.png",
+    title: "ENG",
+    description: "ENG"
+  },
+];
 
 function loadIcons(cat) {
   switch (cat) {
@@ -621,6 +635,8 @@ function loadIcons(cat) {
       return motivationIcons;
     case "division":
       return divisionIcons;
+    case "race":
+      return raceIcons;
 
     default:
       return null;

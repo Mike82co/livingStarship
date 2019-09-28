@@ -34,9 +34,7 @@ class App extends Component {
     }
   }
   gameSelected = dataFromChild => {
-    console.log("game was selected");
     this.setState({ displaySplash: false });
-    console.log(this.state.buttonSelected);
   };
   render() {
     return (

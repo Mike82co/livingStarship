@@ -3,12 +3,14 @@ import Modal from "./Modal";
 import DiceDots from "./DiceDots";
 import loadIcons from "./imageLoader";
 
+
 const meepleImages = new loadIcons("meeple");
 const departmentImages = new loadIcons("department");
 const rankImages = new loadIcons("rank");
 const functionImages = new loadIcons("function");
 const motivationImages = new loadIcons("motivation");
 const divisionImages = new loadIcons("division");
+const raceImages = new loadIcons("race");
 
 class CrewMemberCard extends Component {
   constructor(props) {
@@ -29,7 +31,8 @@ class CrewMemberCard extends Component {
       stress: 0,
       showMeepleModal: false,
       selfUpdated: false,
-      card: this
+      card: this,
+      race: raceImages[0].src
     };
     this.passedFromModal = this.passedFromModal.bind(this)
     this.addName = this.addName.bind(this)
@@ -59,6 +62,10 @@ class CrewMemberCard extends Component {
       case "motivationModal":
         return this.setState({
           motivation: [info]
+        });
+        case "raceModal":
+        return this.setState({
+          race: [info]
         });
 
       default:
@@ -98,6 +105,51 @@ class CrewMemberCard extends Component {
           <div class="crewCardTop">
             <div class="middle">
               <div class="iconRow1">
+                <div class="raceIcon">
+                    <Modal
+                      id="raceModal"
+                      message={this.state.race}
+                      displayImg={this.state.race}
+                      imagesArr={raceImages}
+                      passedData={this.passedFromModal}
+                    />
+                  </div>
+                <div class="diceDeptDevisionContainer">
+                  <div class="deptDevisionContainer">
+                    <div class="divisionIcon">
+                      <Modal
+                        id="divisionModal"
+                        message={this.state.meeple}
+                        displayImg={this.state.division}
+                        imagesArr={divisionImages}
+                        passedData={this.passedFromModal}
+                      />
+                    </div>
+                    <div class="departmentIcon">                    
+                      <Modal
+                        id="departmentModal"
+                        message={this.state.meeple}
+                        displayImg={this.state.department}
+                        imagesArr={departmentImages}
+                        passedData={this.passedFromModal}
+                      />
+                    </div>
+                  </div>
+                  <div class="diceDotsContainer">
+                <DiceDots />
+              </div>
+            </div>
+              </div>
+              <div class="iconRow2">
+              <div class="rankIcon">
+                  <Modal
+                    id="rankModal"
+                    message={this.state.meeple}
+                    displayImg={this.state.rank}
+                    imagesArr={rankImages}
+                    passedData={this.passedFromModal}
+                  />
+                </div>
                 <div class="meepleContainer">
                   <Modal
                     id="meepleModal"
@@ -108,61 +160,31 @@ class CrewMemberCard extends Component {
                     title="Choose your Member"
                   />
                 </div>
-                <div class="rankIcon">
-                  <Modal
-                    id="rankModal"
-                    message={this.state.meeple}
-                    displayImg={this.state.rank}
-                    imagesArr={rankImages}
-                    passedData={this.passedFromModal}
-                  />
-                </div>
-                <div class="motivationIcon">
-                  <Modal
-                    id="motivationModal"
-                    message={this.state.meeple}
-                    displayImg={this.state.motivation}
-                    imagesArr={motivationImages}
-                    passedData={this.passedFromModal}
-                  />
-                </div>
-              </div>
-              <div class="iconRow2">
-                <div class="functions">
-                  <Modal
-                    id="functionModal"
-                    message={this.state.meeple}
-                    displayImg={this.state.shipFunctions}
-                    imagesArr={functionImages}
-                    passedData={this.passedFromModal}
-                  />
-                </div>
-
-                <div class="divisionIcon">
-                  <Modal
-                    id="divisionModal"
-                    message={this.state.meeple}
-                    displayImg={this.state.division}
-                    imagesArr={divisionImages}
-                    passedData={this.passedFromModal}
-                  />
-                </div>
-                <div class="departmentIcon">
-                  <Modal
-                    id="departmentModal"
-                    message={this.state.meeple}
-                    displayImg={this.state.department}
-                    imagesArr={departmentImages}
-                    passedData={this.passedFromModal}
-                  />
+                <div class="functionsMotivationContainer">
+                  <div class="functions">
+                    <Modal
+                      id="functionModal"
+                      message={this.state.meeple}
+                      displayImg={this.state.shipFunctions}
+                      imagesArr={functionImages}
+                      passedData={this.passedFromModal}
+                    />
+                  </div>
+                  <div class="motivationIcon">
+                    <Modal
+                      id="motivationModal"
+                      message={this.state.meeple}
+                      displayImg={this.state.motivation}
+                      imagesArr={motivationImages}
+                      passedData={this.passedFromModal}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="crewCardBottom">
-            <div class="diceDotsContainer">
-              <DiceDots />
-            </div>
+            
           </div>
         </div>
       </React.Fragment>

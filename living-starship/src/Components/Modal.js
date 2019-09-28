@@ -61,8 +61,10 @@ class SimpleModal extends React.Component {
       <div>
         <Typography gutterBottom />
         <Button onClick={this.handleOpen}>
-          {}
-          <img src={this.props.displayImg} alt="" class="modal-display-image"/>
+          <div class="modalDisplayButton">
+            <strong>{this.props.modalTitle}</strong>
+            <img src={this.props.displayImg} alt="" class="modal-display-image"/>
+          </div>
         </Button>
 
         <Modal
