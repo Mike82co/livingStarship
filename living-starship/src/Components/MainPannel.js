@@ -14,7 +14,7 @@ class MainPannel extends Component {
   }
 
   addCard(event) {
-    let id = Math.floor(Math.random() * 2000);
+    let id = Date.now();
     let newCard = (
       <CrewMemberCard cardId={id} passedFunction={this.removeCard} key={id} />
     );

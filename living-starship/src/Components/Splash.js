@@ -15,8 +15,6 @@ class Splash extends Component {
   }
   selectGame = event => {
     event.preventDefault();
-    console.log("button was pressed ");
-    console.log(event.target);
     this.props.callBackFromParent("This is data passed from splash");
   };
 
